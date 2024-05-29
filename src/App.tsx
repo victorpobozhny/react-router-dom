@@ -45,9 +45,6 @@ function App() {
                         <Route path={PATH.ERROR} element={Error404()}/>
                         <Route path="*" element={<Navigate to={PATH.ERROR}/>}/>
                         <Route path="/" element={<Navigate to={PATH.PAGE1}/>}/>
-                        {/*<PageOne/>*/}
-                        {/*<PageTwo/>*/}
-                        {/*<PageThree/>*/}
                     </Routes>
                 </div>
             </div>
