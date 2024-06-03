@@ -35,7 +35,7 @@ export const adidasArr: AdidasItem[] = [
     }
 ]
 
-const addArr = adidasArr.map((el, i)=>({...el, index: `${i}`}))
+export const addArr = adidasArr.map((el, i)=>({...el, index: `${i}`}))
 export const Adidas = () => {
 
 
@@ -45,7 +45,8 @@ export const Adidas = () => {
             <div>
                 {addArr.map(((el, i) =>
                         <Link to={`adidas/${el.index}`} key={el.model}>
-                            <Model/>
+                            <Model model={el.model} collection={el.collection} picture={el.picture}
+                                   price={el.price}/>
                         </Link>
                 ))}
             </div>

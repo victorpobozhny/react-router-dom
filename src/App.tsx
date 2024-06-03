@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./components/Site.module.css";
-import {Adidas, adidasArr} from "./components/pages/Adidas";
+import {Adidas} from "./components/pages/Adidas";
 import {Puma} from "./components/pages/Puma";
 import {Abibas} from "./components/pages/Abibas";
 import {Navigate, NavLink, Route, Routes} from 'react-router-dom';
@@ -14,7 +14,6 @@ const PATH = {
     PAGE3: '/abibas',
     ERROR: '/error404'
 } as const
-
 
 
 function App() {
@@ -50,9 +49,9 @@ function App() {
                         <Route path="/" element={<Navigate to={PATH.PAGE1}/>}/>
                         <Route path="/" element={<Navigate to={PATH.PAGE1}/>}/>
                         <Route path={`adidas/:id`}
-                                   element={
-                                       <Model />
-                                   }/>
+                               element={
+                                   <Model model={} collection={} picture={} price={}/>
+                               }/>
                     </Routes>
                 </div>
             </div>
@@ -60,8 +59,5 @@ function App() {
         </div>
     );
 }
-
-
-
 
 export default App;

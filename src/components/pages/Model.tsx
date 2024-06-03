@@ -2,14 +2,14 @@ import React from 'react';
 import {useParams} from "react-router-dom";
 
 type Model = {
-    model: string
-    collection: string
-    price: string
-    picture: string
+    model?: string
+    collection?: string
+    price?: string
+    picture?: string
 }
 
 const Model: React.FC<Model> = (props) => {
-    const params =  useParams()
+    const params = useParams()
 
     return (
         <div style={{padding: '20px', color: 'whitesmoke', textDecoration: 'none'}}>
