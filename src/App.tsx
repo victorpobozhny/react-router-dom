@@ -50,7 +50,7 @@ function App() {
                         <Route path="/" element={<Navigate to={PATH.PAGE1}/>}/>
                         <Route path={`adidas/:id`}
                                element={
-                                   <Model model={} collection={} picture={} price={}/>
+                                   <Model/>
                                }/>
                     </Routes>
                 </div>

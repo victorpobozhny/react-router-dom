@@ -13,10 +13,10 @@ const Model: React.FC<Model> = (props) => {
 
     return (
         <div style={{padding: '20px', color: 'whitesmoke', textDecoration: 'none'}}>
-            <div>Model: {props.model}</div>
-            <div>Collection: {props.collection}</div>
-            <img src={props.picture} alt={props.model} style={{maxWidth: '300px', padding: '20px'}}/>
-            <div>Price: {props.price}</div>
+            <div>Model: {props.model || 'model'}</div>
+            <div>Collection: {props.collection || `collection`}</div>
+            <img src={props.picture || `no picture`} alt={props.model || 'model'} style={{maxWidth: '300px', padding: '20px'}}/>
+            <div>Price: {props.price || 'no price'}</div>
         </div>
     );
 };
